@@ -64,11 +64,11 @@ public class Bill /*extends BaseEntity*/ { //No por limitaciones de tamaño
 	public Owner getOwner() {
 		return owner;
 	}
-	*/
+	
 	public void setOwner(Owner owner) {
 		this.owner = owner;
 	}
-
+	*/
 	public Visit getVisit() {
 		return visit;
 	}

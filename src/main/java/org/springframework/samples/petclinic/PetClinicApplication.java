@@ -16,8 +16,12 @@
 
 package org.springframework.samples.petclinic;
 
+import org.hibernate.SessionFactory;
+import org.hibernate.jpa.HibernateEntityManagerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.orm.jpa.vendor.HibernateJpaSessionFactoryBean;
 
 /**
  * PetClinic Spring Boot Application.
@@ -28,6 +32,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class PetClinicApplication {
 
+	@Bean  
+	public HibernateJpaSessionFactoryBean sessionFactory(){  
+	    return new HibernateJpaSessionFactoryBean();
+	}  
+	
     public static void main(String[] args) throws Exception {
         SpringApplication.run(PetClinicApplication.class, args);
     }

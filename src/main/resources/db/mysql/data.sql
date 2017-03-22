@@ -58,3 +58,7 @@ INSERT IGNORE INTO visits VALUES (1, '2010-03-04', 'rabies shot', 7, 1);
 INSERT IGNORE INTO visits VALUES (2, '2011-03-04', 'rabies shot', 8, 2);
 INSERT IGNORE INTO visits VALUES (3, '2009-06-04', 'neutered', 8, 3);
 INSERT IGNORE INTO visits VALUES (4, '2008-09-04', 'spayed', 7, 4);
+
+-- Insertamos un usuario y contraseña
+
+INSERT IGNORE INTO users VALUES (1, '2017-03-22', 'pass', 'user', 1);
