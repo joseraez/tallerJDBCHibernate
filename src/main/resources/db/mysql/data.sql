@@ -47,7 +47,14 @@ INSERT IGNORE INTO pets VALUES (11, 'Freddy', '2000-03-09', 5, 9);
 INSERT IGNORE INTO pets VALUES (12, 'Lucky', '2000-06-24', 2, 10);
 INSERT IGNORE INTO pets VALUES (13, 'Sly', '2002-06-08', 1, 10);
 
-INSERT IGNORE INTO visits VALUES (1, 7, '2010-03-04', 'rabies shot');
-INSERT IGNORE INTO visits VALUES (2, 8, '2011-03-04', 'rabies shot');
-INSERT IGNORE INTO visits VALUES (3, 8, '2009-06-04', 'neutered');
-INSERT IGNORE INTO visits VALUES (4, 7, '2008-09-04', 'spayed');
+--Modificamos el SQL para incluir facturas y cambiar el orden de las columnas de visits..
+
+INSERT IGNORE INTO facturas VALUES (1, 40.23, '2010-03-04');
+INSERT IGNORE INTO facturas VALUES (2, 50.02, '2011-03-04');
+INSERT IGNORE INTO facturas VALUES (3, 200000.00, '2009-06-04');
+INSERT IGNORE INTO facturas VALUES (4, 1.02, '2008-09-04');
+
+INSERT IGNORE INTO visits VALUES (1, '2010-03-04', 'rabies shot', 7, 1);
+INSERT IGNORE INTO visits VALUES (2, '2011-03-04', 'rabies shot', 8, 2);
+INSERT IGNORE INTO visits VALUES (3, '2009-06-04', 'neutered', 8, 3);
+INSERT IGNORE INTO visits VALUES (4, '2008-09-04', 'spayed', 7, 4);

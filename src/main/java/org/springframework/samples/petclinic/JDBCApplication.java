@@ -76,7 +76,7 @@ public class JDBCApplication {
 				sr.next();
 			    int idOwn = sr.getInt(1);
 			    
-
+		    	//Introducido
 			   
 			    sql = "INSERT INTO pets VALUES (NULL, ?, ?, ?, ?, NULL)";
 			    ps = connection.prepareStatement(sql);
